@@ -75,7 +75,7 @@ model.add(layers.SimpleRNN(50,input_shape=(length,n_features)))
 model.add(layers.Dense(1))
 model.compile(optimizer='adam', loss='mse')
 
-print("Name: Sabari Akash A      Register Number: 212222230124         ")
+print("Name: GOKUL S      Register Number:212222110011         ")
 model.summary()
 
 model.fit(X_train1,y_train,epochs=100, batch_size=32)
@@ -102,7 +102,7 @@ X_test.shape
 predicted_stock_price_scaled = model.predict(X_test)
 predicted_stock_price = sc.inverse_transform(predicted_stock_price_scaled)
 
-print("Name:  Sabari Akash A         Register Number: 212222230124    ")
+print("Name:  GOKUL S         Register Number: 212222110011    ")
 plt.plot(np.arange(0,1384),inputs, color='red', label = 'Test(Real) Google stock price')
 plt.plot(np.arange(60,1384),predicted_stock_price, color='blue', label = 'Predicted Google stock price')
 plt.title('Google Stock Price Prediction')
